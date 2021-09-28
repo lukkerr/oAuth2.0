@@ -1,0 +1,19 @@
+html
+  head
+    title= title
+    style
+      include style.css
+  body
+    if data
+      div(class="box-login")
+        div(class="card")
+          img(src=data.picture, alt="")
+          p(class="user-name")= data.name
+          a(class="user-email" href=`mailto:${data.email}` target="_blank")= 'Enviar Email'
+          a(class="user-logout" href=`logout`)= 'Fazer Logout'
+          p(class="user-id")= data.sub
+    else
+      div(class="box-login")
+        div(class="card")
+          p(class="not-logado")='Você não esta logado'
+          a(class="user-logar" href=`google`)= 'Fazer Login'

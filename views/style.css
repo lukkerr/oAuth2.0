@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+}
+
+.box-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgb(2, 36, 146),rgb(0, 93, 168));
+}
+
+.box-login .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 10px 10px 10px;
+  width: 250px;
+  min-height: 250px;
+  background-color: #FFF;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 5px 5px 5px rgba(0 0 0 /.5);
+}
+
+.box-login .card .not-logado {
+  font-family: sans-serif;
+  font-family: 14px;
+}
+
+.box-login .card img {
+  position: absolute;
+  top: -50px;
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px rgba(0 0 0 /.5);
+  margin: auto;
+}
+
+.box-login .card .user-name {
+  font-family: cursive;
+  text-align: center;
+}
+
+.box-login .card a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 30px;
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #FFF;
+  margin-top: 10px;
+  border-radius: 5px;
+  text-decoration: unset;
+}
+
+.box-login .card a.user-email {
+  background-image: linear-gradient(#004eff,#2a2d7a);
+}
+
+.box-login .card a.user-logout {
+  background-image: linear-gradient(#fb0000, #4e0404)
+}
+
+.box-login .card a.user-logar {
+  background-image: linear-gradient(#2ab400, #035528)
+}
+
+.box-login .card .user-id {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  font-size: 12px;
+}
